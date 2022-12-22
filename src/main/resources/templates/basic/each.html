@@ -24,7 +24,7 @@
     <th>age</th>
     <th>etc</th>
   </tr>
-  <tr th:each="user : ${users}"> <!-- userStat : 반복에 대한 상태 / 생략가능함 생략하면 자동으로 user + stat이 됨  -->
+  <tr th:each="user, userStat : ${users}"> <!-- userStat : 반복에 대한 상태 / 생략가능함 생략하면 자동으로 user + stat이 됨  -->
     <td th:text="${userStat.count}">username</td>
     <td th:text="${user.username}">username</td>
     <td th:text="${user.age}">0</td>
