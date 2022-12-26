@@ -24,6 +24,7 @@
             <input type="text" id="itemName" th:field="*{itemName}" class="form-control" placeholder="이름을 입력하세요">
             <!-- *{itemName} 에서 *은 th:object="${item} 의 item에서 소속된 거구나 라고 알 수 있음. 그리고 th:field는 id와 name을 자동으로 만들어주기에 생략이 가능하다.
             label 빨간색 되서 id만 남겨두겠음. 상관은 없음. th:field="{$item.itemName} 과 동일하다. -->
+            <!-- th:field = id , name, value 전부 출력해줌 -->
         </div>
         <div>
             <label for="price">가격</label>
